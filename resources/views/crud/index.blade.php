@@ -6,7 +6,7 @@
     </div>
 
     <div>
-        <table class="table table-bordered">
+        <table class="table table-bordered text-center">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -36,8 +36,6 @@
                                 class="me-3 btn btn-info bi bi-pencil-square">Edit</a>
                         </td>
                         <td>
-                            {{-- <a href="{{ route('deleteNote', ['noteId' => $note->id]) }}"
-                                class="me-3 btn btn-danger bi bi-pencil-square">Delete</a> --}}
                             <a data-bs-toggle="modal" data-bs-target="#ModalDelete{{ $note->id }}"
                                 class="me-3 btn btn-danger bi bi-pencil-square">Delete</a>
                         </td>
