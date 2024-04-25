@@ -1,8 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CreateController;
 use App\Http\Controllers\ProfileController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\auth\ProviderController;
 
 Route::get('/', function () {
     // return view('welcome');
@@ -35,3 +36,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/delete', [CreateController::class, 'Delete'])->name('deleteNote');
     Route::get('/search', [CreateController::class, 'Search'])->name('search');
 });
+
+
+////////////////////////////////////////// for google authentication /////////////////////////////////
+Route::get('/auth/{provider}/redirect', [ProviderController::class, 'redirect']);
+Route::get('/auth/{provider}/callback', [ProviderController::class, 'callback']);
+/////////////////////////////////////////////////////////////////////////////////////////////////////
