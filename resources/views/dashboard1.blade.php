@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Dashboard Template · Bootstrap v5.2</title>
+    <title>Notes</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
 
@@ -122,15 +122,15 @@
                             </a>
                         </li>
                          --}}
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="{{ route('create') }}">
-                                <span data-feather="file" class="align-text-bottom"></span>
+                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
                                 Create
                             </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('notes') }}">
-                                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                                <span data-feather="file" class="align-text-bottom"></span>
                                 Notes
                             </a>
                         </li>

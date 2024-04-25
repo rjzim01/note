@@ -15,7 +15,7 @@
             </div>
         @endif
     </div>
-    <div>
+    <div class="table-responsive">
         <form method="POST" action="{{ route('createPost') }}">
             @csrf
             <div class="mb-3">

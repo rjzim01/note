@@ -28,7 +28,7 @@ Route::get('/dashboard', function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/notes', [CreateController::class, 'Notes'])->name('notes');
-    Route::get('/create', [CreateController::class, 'create'])->name('create');
+    // Route::get('/create', [CreateController::class, 'create'])->name('create');
     Route::post('/create', [CreateController::class, 'post'])->name('createPost');
     Route::post('/update', [CreateController::class, 'Update'])->name('updateNote');
     // Route::get('/delete/{noteId}', [CreateController::class, 'Delete'])->name('deleteNote');

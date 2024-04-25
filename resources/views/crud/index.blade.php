@@ -5,11 +5,16 @@
         <h1 class="h2">All Notes</h1>
     </div>
 
-    <div>
+    <div class="d-flex justify-content-start">
+        <a data-bs-toggle="modal" data-bs-target="#ModalCreate" class="btn btn-success mb-3 mt-3">Add Note</a>
+        @include('crud.modal.1_create_modal')
+    </div>
+
+    <div class="table-responsive">
         <table class="table table-bordered text-center">
             <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    {{-- <th scope="col">#</th> --}}
                     <th scope="col">Title</th>
                     <th scope="col">Content</th>
                     <th scope="col">Create Time</th>
@@ -19,12 +24,14 @@
                 </tr>
             </thead>
             <tbody>
+                {{-- 
                 @php
                     $sl = 1;
-                @endphp
+                @endphp 
+                --}}
                 @foreach ($notes as $note)
                     <tr>
-                        <th scope="row">{{ $sl++ }}</th>
+                        {{-- <th scope="row">{{ $sl++ }}</th> --}}
                         <td>{{ $note->title }}</td>
                         <td>{{ $note->content }}</td>
 
