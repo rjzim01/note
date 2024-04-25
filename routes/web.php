@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CreateController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\auth\ProviderController;
+use App\Http\Controllers\Auth\ProviderController;
 
 Route::get('/', function () {
     // return view('welcome');
