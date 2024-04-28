@@ -69,12 +69,16 @@
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('asset/css/dashboard.css') }}" rel="stylesheet">
+
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> --}}
 </head>
 
 <body>
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="{{ route('notes') }}">Notes</a>
+        {{-- <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="{{ route('notes') }}">Notes</a> --}}
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="{{ route('note') }}">Notes</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -129,7 +133,8 @@
                             </a>
                         </li> --}}
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('notes') }}">
+                            {{-- <a class="nav-link" href="{{ route('notes') }}"> --}}
+                            <a class="nav-link" href="{{ route('note') }}">
                                 <span data-feather="file" class="align-text-bottom"></span>
                                 Notes
                             </a>
@@ -211,6 +216,10 @@
         integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
     </script>
     <script src="{{ asset('asset/js/dashboard.js') }}"></script>
+
+    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script> --}}
 </body>
 
 </html>
