@@ -89,7 +89,8 @@ class CreateController extends Controller
         $note->save();
 
         // return redirect()->route('notes')->with('success', 'Note updated successfully');
-        return redirect()->route('note')->with('success', 'Note updated successfully');
+        //return redirect()->route('note')->with('success', 'Note updated successfully');
+        return redirect()->route('details');
     }
     public function Search(Request $request)
     {

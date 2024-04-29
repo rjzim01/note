@@ -25,7 +25,8 @@
                     <div class="row mb-3">
                         <label class="col-md-4 col-lg-3 col-form-label">Content</label>
                         <div class="col-md-8 col-lg-9">
-                            <input name="content" type="text" class="form-control" value="{{ $note->content }}">
+                            {{-- <input name="content" type="text" class="form-control" value="{{ $note->content }}"> --}}
+                            <textarea name="content" cols="30" rows="10" class="form-control">{{ $note->content }}</textarea>
                         </div>
                     </div>
 
