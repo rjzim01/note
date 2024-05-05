@@ -41,7 +41,7 @@ class ProviderController extends Controller
 
 
             Auth::login($user);
-            return redirect('/notes');
+            return redirect('/note');
 
         } catch (\Exception $e) {
             return redirect('/login');
