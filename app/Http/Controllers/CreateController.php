@@ -96,8 +96,9 @@ class CreateController extends Controller
     {
         $query = $request->input('query');
         $notes = Note::where('title', 'LIKE', "%$query%")
-            ->orWhere('content', 'LIKE', "%$query%")
-            ->orWhere('updated_at', 'LIKE', "%$query%")
+            //->orWhere('content', 'LIKE', "%$query%")
+            //->orWhere('updated_at', 'LIKE', "%$query%")
+            ->where('user_id', Auth::id())
             ->get();
 
         // return view('crud.index', compact('notes'));
