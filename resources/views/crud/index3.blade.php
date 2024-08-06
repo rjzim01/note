@@ -13,8 +13,11 @@
     <hr>
     <div class="row">
         <div class="col-md-10">
-            <div class="container border" style="min-height: 300px">
-                <div>{{ $note->content }}</div>
+            <div class="container border">
+                {{-- <div>{{ $note->content }}</div> --}}
+                <div>
+                    <pre style="min-height: 600px">{{ $note->content }}</pre>
+                </div>
             </div>
         </div>
         <div class="col-md-2">
